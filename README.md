@@ -2,7 +2,7 @@
 <h3>Create npm templeates with starting codes</h3>
 <pre>
 . Add bash_profile to your /bin/ directory and run <b>source .bash_profile</b>
-  if you don't have bin folder in directory create one with <b>sudo mkdir /bin/</b>
+  if you don't have bin folder in home directory, create with <b>sudo mkdir /bin/</b>
 <br>
 . You can add <b>alias funcName="nodeRun.sh"</b> in .bash_profile to customize the function call
 <br>
