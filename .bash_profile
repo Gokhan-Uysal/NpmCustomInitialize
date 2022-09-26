@@ -1,2 +1,2 @@
 PATH=~/bin:$PATH
-alias nodeRun='./nodeRun.sh'
+alias nodeRun='nodeRun.sh'

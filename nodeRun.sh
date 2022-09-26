@@ -11,16 +11,6 @@ then
 fi
 
 function AddNode(){
-    NPM=$(npm list -g | grep npm)
-
-    if [ ${#NPM} -eq 0 ]
-    then 
-       echo Installing npm...
-       sudo npm install npm
-    else
-        echo "Already have npm nice"
-    fi
-
     touch server.js
     touch index.html
     touch style.js
@@ -29,6 +19,7 @@ function AddNode(){
 
     #You can add other npm packages in here
     npm init
+    npm install -g nodemon
     npm install express
     npm install react
 }
