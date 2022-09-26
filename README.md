@@ -7,7 +7,7 @@
 . You can add <b>alias funcName="nodeRun.sh"</b> in .bash_profile to customize the function call
 <br>
 . To call the nodeRun.sh from anywhere run <b>bash nodeRun.sh [arg]</b>
-  Argumnets are -help for help, -add for starting and -clear for clear data
+  Arguments are -help for help, -add for starting and -clear for clear data
 <br>
 .  You can add more npm packages to AdNode function in nodeRun.sh to fasten the starting process
 </pre>
