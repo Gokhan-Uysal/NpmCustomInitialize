@@ -18,8 +18,14 @@ function Validation(){
     fi
 }
 
+function MakeExecutable(){
+    chmod +xwr $1
+}
+
+MakeExecutable ./nodeRun.sh
+MakeExecutable ./init.sh
+
 MoveFiles ./nodeRun.sh
-MoveFiles ./init.sh
 
 Validation node
 
@@ -37,4 +43,6 @@ if [ $RT2 -eq 1 ]
 then
     npm install -g npm
 fi
+
+rm -rf ./init.sh
 
