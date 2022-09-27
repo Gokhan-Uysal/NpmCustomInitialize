@@ -2,11 +2,10 @@
 
 NODERUN="noderun"
 INIT="init"
-declare Path="";
 
 function MoveFiles(){
 
-    cp $1 $Path$1       
+    cp $1 /usr/local/bin/$1       
 }
 
 function Validation(){
@@ -28,29 +27,30 @@ function MakeExecutable(){
 
 function GetOS(){
 
-    declare OSTYPE=$(uname)
+    OSTYPE=$(uname)
 
-    if [[ $OSTYPE -eq "Linux-gnu" ]]
+    if [[ $OSTYPE -eq "linux-gnu" ]]
     then
-        Path="/usr/local/bin/"
-    elif [[ $OSTYPE -eq "Darwin" ]] 
+        PATH="usr/local/bin"
+    elif [[ $OSTYPE -eq "darwin" ]] 
     then
-        Path="/usr/local/bin/"
-    elif [[ $OSTYPE -eq "Cygwin" ]]
+        PATH="usr/local/bin"
+    elif [[ $OSTYPE -eq "cygwin" ]]
     then
-        echo Null
-        exit        
+        echo Null            
     else
-        echo Unknow OS
-        exit
+        echo "Unknow OS"
     fi
+    
+    echo $PATH
+    return $OSTYPE
 }
 
 GetOS
-MakeExecutable $NODERUN
-MakeExecutable $INIT
+MakeExecutable ./$NODERUN
+MakeExecutable ./$INIT
 
-MoveFiles $NODERUN
+MoveFiles ./$NODERUN
 
 Validation node
 
@@ -69,6 +69,6 @@ then
     npm install -g npm
 fi
 
-rm -rf ./$NODERUN
-rm -rf ./$INIT
+#rm -rf ./$NODERUN
+#rm -rf ./$INIT
 
