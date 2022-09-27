@@ -3,7 +3,7 @@
 <pre>
 . At first download, run <b>bash ./init.sh</b>
 <br>
-. To call the nodeRun.sh from anywhere run <b>bash nodeRun [arg]</b>
+. To call the nodeRun.sh from anywhere run <b>nodeRun -[arg]</b>
   Arguments are -help for help, -add for initialize npm packages, -start for starting server with nodeman 
   and -clear for clear data
 <br>
