@@ -21,7 +21,7 @@ function AddNode(){
 
     #You can add other npm packages in here
     npm init
-    npm install nodemon
+    npm install --save-dev nodemon
     npm install body-parser
     npm install express
     npm install react
