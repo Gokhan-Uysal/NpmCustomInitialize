@@ -12,8 +12,9 @@ fi
 
 function AddNode(){
     touch server.js
+    touch app.js
     touch index.html
-    touch style.js
+    touch style.css
 
     CompleteHTML
     CompleteJS
@@ -40,8 +41,9 @@ function ClearNode(){
         rm -rf node_modules
         rm -rf package.json
         rm -rf server.js
+        rm -rf app.js
         rm -rf index.html
-        rm -rf style.js
+        rm -rf style.css
         echo "All npm files deleted"
     
     else
@@ -95,22 +97,20 @@ function Help(){
     echo "  '-clear'    clear all npm files"
 }
 
-ARG1="$1"
-
 VAR1="-add"
 VAR2="-clear"
 VAR3="-start"
 VAR4="-help"
 
-if [ $ARG1 == $VAR1 ]
+if [ $1 == $VAR1 ]
 then
     AddNode
 
-elif [ $ARG1 == $VAR2 ]
+elif [ $1 == $VAR2 ]
 then
     ClearNode
 
-elif [ $1 == $VAR23 ]
+elif [ $1 == $VAR3 ]
 then
     StartServer
 elif [ $1 == $VAR4 ]
