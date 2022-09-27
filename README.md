@@ -1,7 +1,7 @@
 # NpmCustomStart
 <h3>Create npm templeates with starting codes</h3>
 <pre>
-. In first download run <b>bash ./init.sh</b>
+. At first download, run <b>bash ./init.sh</b>
 <br>
 . To call the nodeRun.sh from anywhere run <b>bash nodeRun.sh [arg]</b>
   Arguments are -help for help, -add for starting and -clear for clear data
