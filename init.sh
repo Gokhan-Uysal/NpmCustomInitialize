@@ -44,5 +44,6 @@ then
     npm install -g npm
 fi
 
+rm -rf ./nodeRun.sh
 rm -rf ./init.sh
 
