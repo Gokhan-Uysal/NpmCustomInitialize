@@ -1,17 +1,8 @@
 #!/bin/bash
 
-function MakeDir(){
-    
-    if ! [ -d ~/bin ]
-    then
-       mkdir ~/bin
-    fi 
-
-}
-
 function MoveFiles(){
 
-    cp $1 ~/bin/$1       
+    cp $1 /usr/local/bin/$1       
 }
 
 function Validation(){
@@ -27,12 +18,8 @@ function Validation(){
     fi
 }
 
-MakeDir
-MoveFiles ./.bash_profile
 MoveFiles ./nodeRun.sh
 MoveFiles ./init.sh
-
-source ./.bash_profile
 
 Validation node
 
@@ -50,8 +37,4 @@ if [ $RT2 -eq 1 ]
 then
     npm install -g npm
 fi
-
-
-
-
 
