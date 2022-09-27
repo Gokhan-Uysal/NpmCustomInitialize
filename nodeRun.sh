@@ -25,6 +25,9 @@ function AddNode(){
     npm install body-parser
     npm install express
     npm install react
+    
+    #If you don't have VS code disable
+    code .
 }
 
 function StartServer(){
