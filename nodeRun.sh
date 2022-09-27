@@ -68,8 +68,8 @@ function CompleteHTML(){
 }
 
 function CompleteJS(){
-    echo -e "const server = require("express");
-const parser = require("body-parser");
+    echo -e "const server = require(\"express\");
+const parser = require(\"body-parser\");
 const app = server();
 
 //Addition for the newer version of express
@@ -78,12 +78,12 @@ app.use(parser.urlencoded({ extended: true }));
 
 const PORT = 3000;
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+app.get(\"/\", (req, res) => {
+    res.sendFile(__dirname + \"/index.html\");
 });
 
 app.listen(PORT , function(){
-    console.log("Server is running on port " + PORT);
+    console.log(\"Server is running on port \" + PORT);
 });"  > server.js
 }
 
