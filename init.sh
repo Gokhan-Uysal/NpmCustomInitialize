@@ -28,9 +28,12 @@ function Validation(){
 }
 
 MakeDir
-MoveFiles ./init.sh
-MoveFiles ./nodeRun.sh
 MoveFiles ./.bash_profile
+MoveFiles ./nodeRun.sh
+MoveFiles ./init.sh
+
+source ./.bash_profile
+
 Validation node
 
 RT1=$?
