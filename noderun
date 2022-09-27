@@ -12,7 +12,6 @@ fi
 
 function AddNode(){
     touch server.js
-    touch app.js
     touch index.html
     touch style.css
 
@@ -44,7 +43,6 @@ function ClearNode(){
         rm -rf node_modules
         rm -rf package.json
         rm -rf server.js
-        rm -rf app.js
         rm -rf index.html
         rm -rf style.css
         echo "All npm files deleted"

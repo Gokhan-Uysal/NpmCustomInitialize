@@ -69,6 +69,6 @@ then
     npm install -g npm
 fi
 
-rm -rf ./$NODERUN
-rm -rf ./$INIT
+#rm -rf ./$NODERUN
+#rm -rf ./$INIT
 
