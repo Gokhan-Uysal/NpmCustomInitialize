@@ -1,6 +1,6 @@
 #!/bin/bash
-NODERUN="noderun.sh"
-INIT="init.sh"
+NODERUN="noderun"
+INIT="init"
 function MoveFiles(){
 
     cp $1 /usr/local/bin/$1       
