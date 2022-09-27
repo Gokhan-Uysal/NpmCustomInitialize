@@ -1,5 +1,6 @@
 #!/bin/bash
-
+NODERUN="noderun.sh"
+INIT="init.sh"
 function MoveFiles(){
 
     cp $1 /usr/local/bin/$1       
@@ -22,10 +23,10 @@ function MakeExecutable(){
     chmod +xwr $1
 }
 
-MakeExecutable ./nodeRun.sh
-MakeExecutable ./init.sh
+MakeExecutable ./$NODERUN
+MakeExecutable ./$INIT
 
-MoveFiles ./nodeRun.sh
+MoveFiles ./$NODERUN
 
 Validation node
 
@@ -44,6 +45,6 @@ then
     npm install -g npm
 fi
 
-rm -rf ./nodeRun.sh
-rm -rf ./init.sh
+rm -rf ./$NODERUN
+rm -rf ./$INIT
 
