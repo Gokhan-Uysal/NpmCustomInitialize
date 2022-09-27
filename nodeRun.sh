@@ -28,7 +28,7 @@ function AddNode(){
 }
 
 function StartServer(){
-    nodeman server.js
+    nodemon server.js
 }
 
 function ClearNode(){
