@@ -57,8 +57,9 @@ Validation node
 RT1=$?
 if [ $RT1 -eq 1 ]
 then
-    curl "https://nodejs.org/dist/v16.17.1/node-v16.17.1.tar.gz" > "node.tar.gz"
+    curl "https://nodejs.org/dist/v16.17.1/node-v16.17.1.tar.gz" > node.tar.gz
     tar -xvf node.tar.gz
+    rm -rf node.tar.gz
 fi
 
 Validation npm
